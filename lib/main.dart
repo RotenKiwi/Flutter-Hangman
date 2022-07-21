@@ -26,7 +26,15 @@ class HomeApp extends StatefulWidget {
 class _HomeAppState extends State<HomeApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color(0xFF98EE96),
+      appBar: AppBar(
+        title: Text('HangMan'),
+        elevation: 0,
+        centerTitle: true,
+        backgroundColor: Color(0xFF77C15B)
+      ),
+    );
   }
 }
 
