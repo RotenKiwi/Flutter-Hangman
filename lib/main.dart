@@ -44,7 +44,13 @@ class _HomeAppState extends State<HomeApp> {
           Center(
             child: Stack(
               children: [
-
+                figureImage(Game.tries >=0, "assets/hang.png"),
+                figureImage(Game.tries >=0, "assets/head.png"),
+                figureImage(Game.tries >=0, "assets/body.png"),
+                figureImage(Game.tries >=0, "assets/la.png"),
+                figureImage(Game.tries >=0, "assets/ra.png"),
+                figureImage(Game.tries >=0, "assets/ll.png"),
+                figureImage(Game.tries >=0, "assets/rl.png"),
               ],
             ),
           )
