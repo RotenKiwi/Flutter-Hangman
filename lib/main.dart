@@ -37,6 +37,19 @@ class _HomeAppState extends State<HomeApp> {
         centerTitle: true,
         backgroundColor: Color(0xFF77C15B)
       ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Stack(
+              children: [
+
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
