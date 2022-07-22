@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hangman/utilities/game.dart';
 import 'package:hangman/widget/figureImage.dart';
 
 void main() {
@@ -52,7 +53,7 @@ class _HomeAppState extends State<HomeApp> {
                 figureImage(Game.tries >=0, "assets/ra.png"),
                 figureImage(Game.tries >=0, "assets/ll.png"),
                 figureImage(Game.tries >=0, "assets/rl.png"),
-              ],
+              ], //children
             ),
           )
         ],
