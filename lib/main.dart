@@ -77,7 +77,7 @@ class _HomeAppState extends State<HomeApp> {
               children: [
                 //let's make the figure widget
                 //let's add the images to the asset folder
-                //Okey now we will create a Game class
+                //Okay now we will create a Game class
                 //Now the figure will be built according to the number of tries
                 figureImage(Game.tries >= 0, "assets/hang.png"),
                 figureImage(Game.tries >= 1, "assets/head.png"),
@@ -86,8 +86,8 @@ class _HomeAppState extends State<HomeApp> {
                 figureImage(Game.tries >= 4, "assets/la.png"),
                 figureImage(Game.tries >= 5, "assets/rl.png"),
                 figureImage(Game.tries >= 6, "assets/ll.png"),
-              ],
-            ),
+              ], //children
+            ),//stack
           ),
 
           //Now we will build the Hidden word widget
