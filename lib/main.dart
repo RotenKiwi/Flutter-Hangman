@@ -55,7 +55,15 @@ class _HomeAppState extends State<HomeApp> {
                 figureImage(Game.tries >=0, "assets/rl.png"),
               ], //children
             ),
-          )
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: word
+                .split('')
+                .map((e) => letter(e.toUpperCase(),
+                !Game.selectedChar.contains(e.toUpperCase())))
+                .toList(),
+          ),
         ],
       ),
     );
