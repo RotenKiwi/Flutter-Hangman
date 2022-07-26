@@ -60,8 +60,8 @@ class _HomeAppState extends State<HomeApp> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: word.split("").map((e) => letter(e.toUpperCase(), !Game.selectedChar.contains(e.toUpperCase()))).toList(),
-
           ),
+
           SizedBox(
             width: double.infinity,
             height: 250.0,
@@ -72,16 +72,14 @@ class _HomeAppState extends State<HomeApp> {
               padding: EdgeInsets.all(8.0),
               children: alphabets.map((e) {
                 return RawMaterialButton(
-                  onPressed: Game.selectedChar.contains(e)
-                      ? null // we first check that we didn't selected the button before
-                      : () {
+                  onPressed: Game.selectedChar.contains(e) ? null : () {
                     setState(() {
                       Game.selectedChar.add(e);
                       print(Game.selectedChar);
-                      if (!word.split('').contains(e.toUpperCase())) {
+                      if (!word.split('').contains(e.toUpperCase()))
                         Game.tries++;
-                      }
-                    });
+                    }
+                    ); //setState
                   },
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.0),
@@ -101,7 +99,7 @@ class _HomeAppState extends State<HomeApp> {
               }).toList(),
             ),
           )
-        ],
+        ], //children
       ),
     );
   }
