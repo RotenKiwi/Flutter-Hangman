@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hangman/utilities/game.dart';
 import 'package:hangman/widget/figureImage.dart';
+import 'package:hangman/widget/letter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,11 +59,8 @@ class _HomeAppState extends State<HomeApp> {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: word
-                .split('')
-                .map((e) => letter(e.toUpperCase(),
-                !Game.selectedChar.contains(e.toUpperCase())))
-                .toList(),
+            children: word.split("").map((e) => letter(e.toUpperCase(), !Game.selectedChar.contains(e.toUpperCase()))).toList(),
+
           ),
           SizedBox(
             width: double.infinity,
