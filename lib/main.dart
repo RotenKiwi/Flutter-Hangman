@@ -84,17 +84,17 @@ class _HomeAppState extends State<HomeApp> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.0),
                   ),
+                  fillColor: Game.selectedChar.contains(e)
+                      ? const Color(0xFF295E13)
+                      : const Color(0xFF295E13),
                   child: Text(
                     e,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  fillColor: Game.selectedChar.contains(e)
-                      ? Colors.black87
-                      : Colors.blue,
                 );
               }).toList(),
             ),
