@@ -91,7 +91,7 @@ class _HomeAppState extends State<HomeApp> {
                     e,
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 30.0,
+                      fontSize: 31.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
