@@ -27,7 +27,7 @@ class HomeApp extends StatefulWidget {
 }
 
 class _HomeAppState extends State<HomeApp> {
-  String word="Flutter".toUpperCase();
+  String word="Roten".toUpperCase();
   List<String> alphabets=["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
   @override
@@ -48,12 +48,12 @@ class _HomeAppState extends State<HomeApp> {
             child: Stack(
               children: [
                 figureImage(Game.tries >=0, "assets/hang.png"),
-                figureImage(Game.tries >=0, "assets/head.png"),
-                figureImage(Game.tries >=0, "assets/body.png"),
-                figureImage(Game.tries >=0, "assets/la.png"),
-                figureImage(Game.tries >=0, "assets/ra.png"),
-                figureImage(Game.tries >=0, "assets/ll.png"),
-                figureImage(Game.tries >=0, "assets/rl.png"),
+                figureImage(Game.tries >=1, "assets/head.png"),
+                figureImage(Game.tries >=2, "assets/body.png"),
+                figureImage(Game.tries >=3, "assets/la.png"),
+                figureImage(Game.tries >=4, "assets/ra.png"),
+                figureImage(Game.tries >=5, "assets/ll.png"),
+                figureImage(Game.tries >=6, "assets/rl.png"),
               ], //children
             ),
           ),
